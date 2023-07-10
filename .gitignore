@@ -34,3 +34,5 @@ build/
 
 ####ut-front####
 /ut-front/node_modules
+
+logs/

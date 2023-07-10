@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>demo-helloworld</artifactId>
+  <artifactId>demo-log</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>demo-helloworld</name>
+  <name>demo-log</name>
 
   <parent>
     <groupId>com.ashtime99</groupId>
@@ -20,6 +20,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
+    <org.projectlombok.version>1.18.20</org.projectlombok.version>
   </properties>
 
   <dependencies>
@@ -38,10 +39,17 @@
       <groupId>cn.hutool</groupId>
       <artifactId>hutool-all</artifactId>
     </dependency>
+
+    <!-- lombok 依赖-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${org.projectlombok.version}</version>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
 
   <build>
-    <finalName>spring-boot-demo-helloworld</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
