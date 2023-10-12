@@ -2,3 +2,6 @@ server:
   port: 8080
   servlet:
     context-path: /demo
+
+knife4j:
+  enable: true
